@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de contraseña</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <div class="container">
+        <h1>Generador Password</h1>
+      <form id="pg-form">
+        <div class="result">
+          <input type="text" id="result" placeholder="Random Password">
+          <div class="clipboard">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </div>
+        </div>
+        <div>
+          <div class="field">
+            <label for="length">Numero de caracteres: </label>
+            <input type="number" id="length" value="6" min="6">
+          </div>
+          <div class="field">
+            <label for="capital">Mayusculas</label>
+            <input type="checkbox" id="capital" checked>
+          </div>
+          <div class="field">
+            <label for="small">minusculas</label>
+            <input type="checkbox" id="small" checked>
+          </div>
+          <div class="field">
+            <label for="number">Numeros</label>
+            <input type="checkbox" id="number">
+          </div>
+          <div class="field">
+            <label for="symbol">Caracteres especiales</label>
+            <input type="checkbox" id="symbol">
+          </div>
+        </div>
+        <div class="strength" id="seguridad">Nivel: </div>
+        <button type="submit">Generar Contraseña</button>
+      </form>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
